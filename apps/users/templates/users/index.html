@@ -1,0 +1,51 @@
+<html>
+    <head>
+    </head>
+        <body>
+            <div id="reg">
+                <h1>Registration</h1>
+                    <h2>Welcome!!</h2>  
+                    <form action='/register', method='POST'>
+                        {% csrf_token %}
+
+                        <h3>Name:</h3>
+                        <input id="textbox" name="name" type="text">
+                        
+                        <h3>Username:</h3>
+                        <input id="textbox" name="username" type="text">
+                        
+                        <h3>Password:</h3>
+                        <input id="textbox" name="password" type="password">
+
+                        <h3>Confirm Password:</h3>
+                        <input id="textbox" name="confirm_pw" type="password">
+
+                        <h3>Date Hired:</h3>
+                        <input id="datebox" type="date" name="date" type="date">
+                        
+                       <br>
+                        <button type="submit">REGISTER</button>
+                    </form>
+                </div>
+                <div id="log">
+                    <form action='/login' method="POST">
+                    {% csrf_token %}
+                    <h1>Login</h1>
+                        <h3>User Name:</h3>
+                        <input id="textbox" name="username" type="text">
+                        
+                        <h3>Password:</h3>
+                        <input id="textbox" name="password" type="password">
+                        <br>
+                        <button type="submit">LOGIN</button>
+                    </form>
+                    {% if messages %}
+                        <ul class ='messages'>
+                            {% for message in messages  %}
+                            <li>{{message}}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+        </body>
+</html>

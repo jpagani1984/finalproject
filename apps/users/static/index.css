@@ -1,0 +1,133 @@
+*{
+    padding:0;
+    margin:0;
+}
+body
+{
+    width:900px;
+    margin-left: 20px;
+    text-align: center;
+    background: linear-gradient(rgb(0, 0, 0), rgb(165, 219, 149));
+}
+h1
+{
+    color: lightgreen;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2
+{
+    color: lightgreen;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3
+{
+    color: lightgreen;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#reg
+{
+    height: 465px;
+    width: 350px;
+    text-align: center;
+    display: inline-block;
+    border: solid silver;
+    margin-top: 80px;
+    border-radius: 45px;
+    background: repeating-radial-gradient(rgb(165, 219, 149),rgb(0, 0, 0),rgb(165, 219, 149));
+}
+#add
+{
+    height: 275px;
+    width: 350px;
+    text-align: center;
+    display: inline-block;
+    border: solid silver;
+    margin-top: 80px;
+    border-radius: 5px;
+    background: repeating-radial-gradient(rgb(165, 219, 149),rgb(0, 0, 0),rgb(165, 219, 149));
+}
+button
+{
+    margin-left: 134px;
+    height:30px;
+    width: 80px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: purple;
+    background: linear-gradient(rgb(165, 219, 149),rgb(0, 0, 0),rgb(165, 219, 149));
+    display: block;
+    color: lightgreen;
+    border-radius: 5px;
+}
+#log
+{
+    height: 460px;
+    width:330px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    border: solid silver;
+    padding-top: 5px;
+    margin-top: 80px;
+    border-radius: 45px;
+    background: repeating-radial-gradient(rgb(165, 219, 149),rgb(0, 0, 0),rgb(165, 219, 149));
+}
+p
+{
+    color:rgb(255, 0, 0);
+}
+#textbox
+{
+    height: 20px;
+    width:150px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: solid grey;
+    text-align: center;
+    vertical-align: top;
+    background-color: rgb(238, 238, 184);
+    box-shadow: 5px;
+    border-radius: 10px;
+}
+#datebox
+{
+    height: 30px;
+    width:150px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: solid grey;
+    text-align: center;
+    vertical-align: top;
+    background-color: rgb(238, 238, 184);
+    box-shadow: 5px;
+    border-radius: 10px;
+}
+a
+{
+    font-size: 20px;
+    color: orange;
+}
+.messages
+{
+    font-weight: bolder;
+    color: red;
+}
+ul
+{
+    list-style-type: none;
+}
+table
+{
+    text-align: center;
+}
+table a
+{
+    color: orange; 
+}
+#result 
+{
+    color: orange;
+}

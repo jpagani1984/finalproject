@@ -1,0 +1,27 @@
+<html>
+    <head>
+        {% load staticfiles %}
+        <link rel="stylesheet" href="{% static 'C:\Users\rac\Desktop\DojoAssignments\Django\belting\apps\users\static\index.css'%}">
+    </head>
+    <body>
+        <div id="add">
+                <a href="/wishlist/dashboard"> Home</a> 
+                <br>
+                <a href="/">Logout</a>
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            <h1>Create a New Wish List Item</h1>
+  
+                <form action='/wishlist/createItem' method='POST'>
+                   {% csrf_token %}
+                    <h3>Item/Product</h3>
+                        <input id="textbox" name='item' type="text">
+                        <button type="submit" value='Add'>Add</button>
+                </form>
+    </body>
+</html>

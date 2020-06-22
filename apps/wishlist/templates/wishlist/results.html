@@ -1,0 +1,16 @@
+<html>
+    <head>
+        {% load staticfiles %}
+        <link rel="stylesheet" href="{% static 'C:\Users\rac\Desktop\DojoAssignments\Django\belting\apps\users\static\index.css'%}">
+    </head>
+    <body>
+        <a href="/wishlist/dashboard"> Home</a> 
+        <br>
+        <a href="/">logout</a>
+        <h1 id="result">{{items.item}}</h1>
+        <h2>Users who added this product/Item under their wish list:</h2>
+        {% for user in items.other.all %}
+            <h3>{{user.name}}</h3>
+        {% endfor %}
+    </body>
+</html>
